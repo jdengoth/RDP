@@ -1,11 +1,12 @@
 #! /bin/bash
-printf "Check Out My Channel While Waiting- https://youtu.be/VeO22kIvZOQ" >&2
+printf "jdengoth" >&2
 {
-sudo useradd -m ALOK
-sudo adduser ALOK sudo
-echo 'ALOK:8426' | sudo chpasswd
+sudo useradd -m jdengoth
+sudo adduser jdengoth sudo
+echo 'jdengoth:jdengoth123' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
-sudo apt-get update
+sudo apt-get update -y
+sudo apt-get install busybox zsh tmux -y
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo dpkg --install chrome-remote-desktop_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
@@ -23,13 +24,13 @@ sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y 
 sudo apt -y install obs-studio
 sudo apt -y install firefox
-sudo adduser ALOK chrome-remote-desktop
+sudo adduser jdengoth chrome-remote-desktop
 } &> /dev/null &&
 printf "\nSetup Completed " >&2 ||
 printf "\nError Occured " >&2
 printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debian Linux And Paste Down\n'
 read -p "Paste Here: " CRP
-su - ALOK -c """$CRP"""
+su - jdengoth -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n'
-printf 'Your SUDO Pasword Is 8426 \n'
-printf 'Terminal issue solve - https://youtu.be/XZxxaNWJxT0'
+printf 'Your SUDO Pasword Is jdengoth123 \n'
+printf 'Done!'
