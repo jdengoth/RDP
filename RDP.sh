@@ -34,3 +34,4 @@ su - jdengoth -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n'
 printf 'Your SUDO Pasword Is jdengoth123 \n'
 printf 'Done!'
+sudo -i
