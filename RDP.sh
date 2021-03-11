@@ -25,7 +25,7 @@ sudo apt install nautilus nano -y
 sudo apt -y install obs-studio
 sudo apt -y install firefox
 sudo adduser jdengoth chrome-remote-desktop
-} &> /dev/null &&
+}  &&
 printf "\nSetup Completed " >&2 ||
 printf "\nError Occured " >&2
 printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debian Linux And Paste Down\n'
